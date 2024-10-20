@@ -68,16 +68,6 @@ st.write('Enter a sentence or paragraph to analyze the emotions expressed in it.
 # Text input
 user_input = st.text_area('Enter text here:', height=200)
 
-# Sample text button
-import streamlit as st
-
-# Sample text to be copied
-sample_text = "This is the text that will be copied to clipboard."
-
-# Display the sample text
-st.write("Sample Text:")
-st.write(sample_text)
-
 # Create a button to copy text to clipboard
 # Sample text to be copied
 sample_text = "I am absolutely thrilled about my recent promotion! However, I feel a twinge of sadness knowing that a colleague, who worked just as hard, was overlooked. Despite this disappointment, I cherish our friendship and am relieved that we can still support each other."
