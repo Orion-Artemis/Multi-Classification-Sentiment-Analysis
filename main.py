@@ -4,9 +4,10 @@ from transformers import BertForSequenceClassification, BertTokenizer
 import re
 
 
-# Load your pre-trained model
-model = BertForSequenceClassification.from_pretrained("./bert_emotion_classifier")
-tokenizer = BertTokenizer.from_pretrained("./bert_emotion_classifier")
+model_name = "OmRajesh/bert-multi-label-classisfication"
+
+tokenizer = BertTokenizer.from_pretrained(model_name)
+model = BertForSequenceClassification.from_pretrained(model_name)
 model.eval()
 
 # Define a function to predict emotions
@@ -98,6 +99,7 @@ if st.sidebar.button('Analyze'):
         texts = preprocessTexts(user_input)
         predictions = predict_emotions(texts)
         emotions = emotionList(predictions)
+        emotions = list(dict.fromkeys(emotions))
         st.sidebar.write('Emotions expressed in the text:')
         st.sidebar.write(emotions)
     else:
