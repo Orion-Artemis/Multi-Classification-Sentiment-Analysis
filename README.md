@@ -21,13 +21,16 @@ This project is a multi-emotion classification tool using a pre-trained BERT mod
     pip install -r requirements.txt
     ```
 
-3. Ensure you have the pre-trained BERT model files in the `./bert_emotion_classifier` directory. You can download the model from Kaggle: https://www.kaggle.com/models/omlande/bert-multiclass-classification-sentiment-analysis
+3. Now run the command 
+    ```bash
+    streamlit run main.py
+    ```
 
 ## Usage
 
 Run the Streamlit app:
 ```bash
-streamlit run app.py
+streamlit run main.py
 ```
 
 ## License
