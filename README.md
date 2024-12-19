@@ -12,7 +12,7 @@ This project is a multi-emotion classification tool using a pre-trained BERT mod
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/Multi-Class-SentimentAnalysis.git
+    git clone https://github.com/Orion-Artemis/Multi-Classification-Sentiment-Analysis.git
     cd Multi-Class-SentimentAnalysis
     ```
 
